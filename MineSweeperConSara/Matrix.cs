@@ -32,9 +32,7 @@
         public Cell At(Coordinates coordinates) 
             => _matrix[coordinates.X, coordinates.Y];
 
-        public void SetMine(Coordinates coordinates)
-        {
-            _matrix[coordinates.X, coordinates.Y] = new Cell(false,true);
-        }
+        public void SetMine(Coordinates coordinates) 
+            => _matrix[coordinates.X, coordinates.Y] = new Cell(false,true);
     }
 }
