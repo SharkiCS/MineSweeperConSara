@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperConSara", "MineSweeperConSara\MineSweeperConSara.csproj", "{75DF3C34-4769-4014-B6EB-42EEAD8BEBD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperConSara.Tests", "MineSweeperConSara.Tests\MineSweeperConSara.Tests.csproj", "{07B258FB-DDF5-4082-B48B-6E225ABFF5D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75DF3C34-4769-4014-B6EB-42EEAD8BEBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75DF3C34-4769-4014-B6EB-42EEAD8BEBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75DF3C34-4769-4014-B6EB-42EEAD8BEBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75DF3C34-4769-4014-B6EB-42EEAD8BEBD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B258FB-DDF5-4082-B48B-6E225ABFF5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B258FB-DDF5-4082-B48B-6E225ABFF5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B258FB-DDF5-4082-B48B-6E225ABFF5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B258FB-DDF5-4082-B48B-6E225ABFF5D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
