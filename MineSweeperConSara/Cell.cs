@@ -1,17 +1,10 @@
 namespace MineSweeperConSara
 {
-    public class Cell
+    public struct Cell
     {
-        public bool Visible { get; set; }
-        public bool IsMine { get; set; }
-
-        public void SetMine()
-        {
-            IsMine = true;
-        }
-        public void SetVisibility()
-        {
-            Visible = true;
-        }
+        public readonly bool Visibility;
+        public readonly bool Mines;
+        public Cell(bool visibility, bool mines) 
+            => (Visibility, Mines) = (visibility, mines);
     }
 }

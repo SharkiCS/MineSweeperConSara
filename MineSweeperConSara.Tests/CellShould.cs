@@ -10,27 +10,24 @@ namespace MineSweeperConSara.Tests
         [Fact]
         public void BeFalseForVisibilityAndIsMineWhenInstantiated()
         {
-            Cell cell = new Cell();
-            cell.Visible.Should().Be(false);
-            cell.IsMine.Should().Be(false);
+            Cell cell = new Cell(false, false);
+            cell.Visibility.Should().Be(false);
+            cell.Mines.Should().Be(false);
+            
         }
         [Fact]
+        
         public void BeTrueForIsMine()
         {
-            Cell cell = new Cell();
-            
-            cell.SetMine();
-            
-            cell.IsMine.Should().Be(true);
+            Cell cell = new Cell(false, true);
+            cell.Mines.Should().Be(true);
         }
+        
         [Fact]
         public void BeTrueForVisibility()
         {
-            Cell cell = new Cell();
-            
-            cell.SetVisibility();
-            
-            cell.Visible.Should().Be(true);
+            Cell cell = new Cell(true, false);
+            cell.Visibility.Should().Be(true);
         }
     }
 }
