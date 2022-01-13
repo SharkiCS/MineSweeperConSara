@@ -36,11 +36,11 @@ namespace MineSweeperConSara
 
         public void Open(Coordinates coordinates)
         {
-            _matrix.
-            if (_matrix.At(coordinates).Mines)
-            {
+            bool isMine = _matrix.At(coordinates).Mines;
+            _matrix.SetVisibility(coordinates, isMine);
+            
+            if (isMine)
                 IsLoser = true;
-            }
         }
     }
 }

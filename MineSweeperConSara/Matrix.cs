@@ -34,5 +34,9 @@
 
         public void SetMine(Coordinates coordinates) 
             => _matrix[coordinates.X, coordinates.Y] = new Cell(false,true);
+
+
+        public void SetVisibility(Coordinates coordinates, bool isMine)
+            => _matrix[coordinates.X, coordinates.Y] = new Cell(true, isMine);
     }
 }

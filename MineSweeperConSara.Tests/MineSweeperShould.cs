@@ -23,5 +23,16 @@ namespace MineSweeperConSara.Tests
             mineSweeper.Open(new Coordinates(0,0));
             mineSweeper.Print().Should().Be("*..\n...\n...");
         }
+        
+        [Fact]
+        public void LoseTheGameAfterOpenAMine()
+        {
+            Matrix matrix = new Matrix(3,3);
+            matrix.SetMine(new Coordinates(0,0));
+            MineSweeper mineSweeper =  new  MineSweeper(matrix);
+
+            mineSweeper.Open(new Coordinates(0,0));
+            mineSweeper.IsLoser.Should().Be(true);
+        }
     }
 }
