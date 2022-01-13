@@ -1,4 +1,5 @@
 using Xunit;
+using FluentAssertions;
 
 namespace MineSweeperConSara.Tests
 {
