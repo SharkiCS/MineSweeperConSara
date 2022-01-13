@@ -5,6 +5,7 @@ namespace MineSweeperConSara
     public class MineSweeper
     {
         private readonly Matrix _matrix;
+        public bool IsLoser { get; private set; }
 
         public MineSweeper(Matrix matrix) 
             => _matrix = matrix;
@@ -19,11 +20,27 @@ namespace MineSweeperConSara
                 {
                     if (!_matrix.At(new Coordinates(x, y)).Visibility)
                         board.Append('.');
+                    else
+                    {
+                        if (_matrix.At(new Coordinates(x, y)).Mines)
+                        {
+                            board.Append('*');
+                        }
+                    }
                 }
                 board.Append('\n');
             }
 
             return board.ToString().Substring(0, board.Length -1);
+        }
+
+        public void Open(Coordinates coordinates)
+        {
+            _matrix.
+            if (_matrix.At(coordinates).Mines)
+            {
+                IsLoser = true;
+            }
         }
     }
 }
