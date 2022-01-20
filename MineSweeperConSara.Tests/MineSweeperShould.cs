@@ -27,6 +27,7 @@ namespace MineSweeperConSara.Tests
         [Fact]
         public void LoseTheGameAfterOpenAMine()
         {
+        
             Matrix matrix = new Matrix(3,3);
             matrix.SetMine(new Coordinates(0,0));
             MineSweeper mineSweeper =  new  MineSweeper(matrix);
